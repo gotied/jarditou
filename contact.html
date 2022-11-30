@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarditou</title>
+    <link rel="stylesheet" href="jarditou_css/assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="src/img/jarditou_logo-removebg-preview.png" class="img1" alt="logo jarditou" title="logo jarditou"
+            width="250" height="100">
+
+        <p><i>Tout le jardin</i></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="lien" title="accueil">Accueil</a></li>
+            <li><a href="tableau.html" class="lien" title="tableau">Tableau</a></li>
+            <li><a href="contact.html" class="lien" title="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <img src="src/img/promotion.jpg" class="img2" alt="promo jarditou" title="promo lames de terrasse jarditout"
+        width="1850" height="300">
+    <section class="aside">
+        <div class="div1">
+            <h1><u>Contact</u></h1>
+            <hr>
+
+            <p>*Ces zones sont obligatoires</p>
+            <form action="destination.php" method="post" id="formulaire_contact">
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <label for="nom">Votre nom* :</label><input type="text" name="nom" required pattern="^[a-z]+$"
+                        id="nom">
+                    <br>
+                    <label for="prenom">Votre prenom* :</label><input type="text" name="prenom" required
+                        pattern="^[a-z]+$" id="prenom">
+                    <p>Sexe* :
+                        <label for="masculin">Masculin</label><input type="radio" id="masculin" name="sexe"
+                            value="masculin">
+                        <label for="féminin">Féminin</label><input type="radio" id="féminin" name="sexe"
+                            value="féminin">
+                        <label for="nongenré">Non genré</label><input type="radio" id="nongenré" name="sexe"
+                            value="nongenré">
+                    </p>
+                    <label for="date">Date de naissance* :</label><input type="text" name="date" id="date" required>
+                    <br>
+                    <label for="codepostal">Code postal* :</label><input type="text" name="codepostal" id="codepostal"
+                        required>
+                    <br>
+                    <label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse">
+                    <br>
+                    <label for="ville">Ville :</label><input type="text" name="ville" id="ville">
+                    <br>
+                    <label for="email">Email* :</label><input type="text" name="email" id="email" required>
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Votre demande</legend>
+                    <label for="sujet">Sujet* :</label>
+                    <select name="sujet" id="sujet" required>
+                        <option>Mes commandes</option>
+                        <option>Question sur un produit</option>
+                        <option>Réclamation</option>
+                        <option>Autres</option>
+                    </select>
+                    <br>
+                    <label for="question">Votre question* :</label>
+                    <textarea name="question" rows="5" cols="45" id="question" required></textarea>
+
+
+                </fieldset>
+                <br>
+                <input type="checkbox" name="traitementinfo" value="accepter" id="traitement" required><label
+                    for="traitement">*J'accepte le
+                    traitement informatique de ce formulaire</label>
+                <br>
+                <input type="submit" value="envoyer"><input type="reset" value="annuler">
+            </form>
+            <hr>
+        </div>
+        <div class="aside2">
+            <aside>colonne droite</aside>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="mentionslegales.html" class="lien" title="mentions legales">Mentions légales</a></li>
+            <li><a href="horaires.html" class="lien" title="horaires">Horaires</a></li>
+            <li><a href="plandusite.html" class="lien" title="plan du site">Plan du site</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
